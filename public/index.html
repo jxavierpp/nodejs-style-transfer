@@ -1,29 +1,29 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Node.JS Fast Style Transfer Demo</title>
+    <title>Estilización de Imágenes (Demostración)</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
+    </head>
 
 <body>
 
-<h1>Node.JS Fast Style Transfer Demo</h1>
+<h1>Estilización de Imágenes con Pytorch y Nodejs<br>(Demostración)</h1>
 
-<div id="img-area">
+<div id="img-area" class="image-area">
     <div id="content"></div>
-    <div id="text-area"><span id="text">Click to upload picture!</span></div>
+    <div id="text-area"><span id="text"><u>Presione aqui</u><br>para subir una imagen!</span></div>
     <input id="upload" type="file" name="image" accept="image/*">
-    <div id="spinner">Please wait...</div>
+    <div id="spinner">Transformando...</div>
 </div>
 
 <br>
 
-<button id="submit" disabled="disabled">Apply Style</button>
-<button id="download" disabled="disabled">Download</button>
+<button id="submit" disabled="disabled">Aplicar Estilo</button>
+<button id="download" disabled="disabled">Descargar</button>
 
 </body>
 

@@ -4,11 +4,12 @@ const MAX_WIDTH = 224,
 
 // our html elements
 const upload = document.getElementById('upload'),
-    submit = document.getElementById('submit'),
-    download = document.getElementById('download'),
-    spinner = document.getElementById('spinner'),
-    content = document.getElementById('content'),
-    text = document.getElementById('text');
+submit = document.getElementById('submit'),
+download = document.getElementById('download'),
+spinner = document.getElementById('spinner'),
+content = document.getElementById('content'),
+text = document.getElementById('text');
+
 
 let currentCanvas, currentImgData;
 
@@ -27,7 +28,7 @@ submit.addEventListener('click', function() {
 
 // download event
 download.addEventListener('click', function() {
-    downloadURI(currentImgData, 'image.jpg');
+    downloadURI(currentImgData, 'imagen.jpg');
 });
 
 function displayResult(err, dataURI) {
@@ -61,4 +62,5 @@ function updateCanvas(context) {
     // disable download button
     download.setAttribute('disabled', 'disabled');
     currentCanvas = context.canvas;
+    console.log(context);
 }
